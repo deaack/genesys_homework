@@ -1,5 +1,9 @@
+package tests;
 
 import org.junit.jupiter.api.Test;
+
+import utils.Credential;
+import utils.CredentialReader;
 
 public class CredentialReaderTest {
 

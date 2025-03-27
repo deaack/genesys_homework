@@ -1,3 +1,4 @@
+package utils;
 //Credentail to be insatanced
 public class Credential {
     private String username;
