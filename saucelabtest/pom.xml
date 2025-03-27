@@ -14,10 +14,11 @@
   </properties>
 
   <dependencies>
+
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>3.141.59</version>
+      <version>4.19.1</version>
     </dependency>
 
     <!-- Webdriver automatically handled -->
