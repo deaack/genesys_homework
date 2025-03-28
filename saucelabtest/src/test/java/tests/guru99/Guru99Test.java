@@ -47,15 +47,15 @@ public class Guru99Test {
 
         String alertText = guru.getPopupTextAndAccept();
         assertTrue(alertText.toLowerCase().contains("successfully"));
-
+        wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         guru.navigateToTooltipPage();
         assertTrue(guru.isDownloadButtonVisible());
     }
 
     @AfterEach
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        // if (driver != null) {
+        //     driver.quit();
+        // }
     }
 }

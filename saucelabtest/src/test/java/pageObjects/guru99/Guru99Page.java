@@ -72,7 +72,8 @@ public class Guru99Page {
     }
 
     public void navigateToTooltipPage() {
-        WebElement menu = SeleniumUtils.waitAndFindElement(driver, seleniumMenu, Duration.ofSeconds(5));
+        // ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
+        WebElement menu = SeleniumUtils.waitAndFindElement(driver, seleniumMenu, Duration.ofSeconds(10));
         WebElement tooltip = SeleniumUtils.waitAndFindElement(driver, tooltipOption, Duration.ofSeconds(5));
         Actions actions = new Actions(driver);
         actions.moveToElement(menu).pause(500).moveToElement(tooltip).click().build().perform();
