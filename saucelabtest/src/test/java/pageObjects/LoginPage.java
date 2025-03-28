@@ -1,21 +1,21 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.time.Duration;
 
 import utils.SeleniumUtils;
 
 public class LoginPage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
     static final String LOGINPAGE = "https://www.saucedemo.com/";
 
-    private By usernameField = By.id("user-name");
-    private By passwordField = By.id("password");
-    private By loginButton = By.id("login-button");
+    private final By usernameField = By.id("user-name");
+    private final By passwordField = By.id("password");
+    private final By loginButton = By.id("login-button");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -48,4 +48,6 @@ public class LoginPage {
         enterPassword(password);
         clickLoginButton();
     }
+
+
 }

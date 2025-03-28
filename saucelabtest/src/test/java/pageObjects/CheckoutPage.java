@@ -15,7 +15,7 @@ public class CheckoutPage {
     private final By lastName = By.id("last-name");
     private final By postalCode = By.id("postal-code");
     private final By continueButton = By.id("continue");
-    private final By cancelButton = By.id("canvel");
+    private final By cancelButton = By.id("cancel");
 
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;

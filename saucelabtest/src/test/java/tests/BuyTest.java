@@ -1,17 +1,19 @@
 package tests;
 
-import utils.Credential;
-import utils.CredentialReader;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.InventoryPage;
 import pageObjects.LoginPage;
+import utils.Credential;
+import utils.CredentialReader;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-public class InventoryTest {
+public class BuyTest {
 
     private WebDriver driver;
 
