@@ -19,4 +19,9 @@ public class SeleniumUtils {
         highlight(driver, element);
         return element;
     }
+
+    public static Alert waitForAlert(WebDriver driver, Duration timeout) {
+        WebDriverWait wait = new WebDriverWait(driver, timeout);
+        return wait.until(ExpectedConditions.alertIsPresent());
+    }    
 }
