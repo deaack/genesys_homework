@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.saucedemo;
 
 import java.time.Duration;
 

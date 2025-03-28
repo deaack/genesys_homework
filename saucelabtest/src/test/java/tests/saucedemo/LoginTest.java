@@ -1,4 +1,4 @@
-package tests;
+package tests.saucedemo;
 
 import org.junit.jupiter.api.AfterEach;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageObjects.LoginPage;
+import pageObjects.saucedemo.LoginPage;
 import utils.Credential;
 import utils.CredentialReader;
 

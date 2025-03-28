@@ -1,4 +1,4 @@
-package tests;
+package tests.saucedemo;
 
 import java.time.Duration;
 
@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageObjects.LoginPage;
+import pageObjects.saucedemo.LoginPage;
 import utils.SeleniumUtils;
 
 public class ErrorAndFooterTest {
