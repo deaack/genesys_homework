@@ -1,4 +1,4 @@
-package tests;
+package tests.saucedemo;
 
 import org.junit.jupiter.api.AfterEach;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,12 +8,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageObjects.CartPage;
-import pageObjects.CheckoutPage;
-import pageObjects.CompletePage;
-import pageObjects.InventoryPage;
-import pageObjects.LoginPage;
-import pageObjects.OverviewPage;
+import pageObjects.saucedemo.CartPage;
+import pageObjects.saucedemo.CheckoutPage;
+import pageObjects.saucedemo.CompletePage;
+import pageObjects.saucedemo.InventoryPage;
+import pageObjects.saucedemo.LoginPage;
+import pageObjects.saucedemo.OverviewPage;
 import utils.Credential;
 import utils.CredentialReader;
 

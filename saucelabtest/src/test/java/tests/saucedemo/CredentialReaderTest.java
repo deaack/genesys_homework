@@ -1,4 +1,4 @@
-package tests;
+package tests.saucedemo;
 
 import org.junit.jupiter.api.Test;
 
