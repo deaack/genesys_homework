@@ -7,7 +7,7 @@ import utils.SeleniumUtils;
 
 import java.time.Duration;
 
-public class RichTextEditorPage {
+public class TextEditorPage {
 
     private WebDriver driver;
 
@@ -16,7 +16,7 @@ public class RichTextEditorPage {
 
     private By editorBody = By.cssSelector("div.ck-editor__editable[contenteditable='true']");
 
-    public RichTextEditorPage(WebDriver driver) {
+    public TextEditorPage(WebDriver driver) {
         this.driver = driver;
     }
 
