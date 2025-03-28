@@ -1,23 +1,23 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.time.Duration;
 
 import utils.SeleniumUtils;
 
 public class InventoryPage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    private By cartBadge = By.className("shopping_cart_badge");
+    private final By cartBadge = By.className("shopping_cart_badge");
 
-    private By addBackpackButton = By.id("add-to-cart-sauce-labs-backpack");
-    private By addFleeceJacketButton = By.id("add-to-cart-sauce-labs-fleece-jacket");
+    private final By addBackpackButton = By.id("add-to-cart-sauce-labs-backpack");
+    private final By addFleeceJacketButton = By.id("add-to-cart-sauce-labs-fleece-jacket");
 
-    private By cartIcon = By.className("shopping_cart_link");
+    private final By cartIcon = By.className("shopping_cart_link");
 
     public InventoryPage(WebDriver driver) {
         this.driver = driver;
@@ -46,4 +46,7 @@ public class InventoryPage {
         WebElement cart = SeleniumUtils.waitAndFindElement(driver, cartIcon, Duration.ofSeconds(5));
         cart.click();
     }
+
+
+    
 }
